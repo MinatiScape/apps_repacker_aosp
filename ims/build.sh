@@ -15,8 +15,9 @@ java -jar ../apktool.jar d "$1"/system/priv-app/ImsService/ImsService.apk
 java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-common.jar
 java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-ims-base.jar
 java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-framework.jar
-java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-gwsd.jar
-java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-gwsdv2.jar
+java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-wfo-legacy.jar
+java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-ims-legacy.jar
+java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-services.jar
 java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-ims-common.jar
 java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-ims-extension-plugin.jar
 java -jar ../baksmali.jar d -o ImsService/smali "$1"/system/framework/mediatek-telecom-common.jar
